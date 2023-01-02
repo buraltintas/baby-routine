@@ -39,8 +39,6 @@ const Welcome = () => {
     setBabyInfo(s.babyInfo);
   };
 
-  console.log(s.babyInfo);
-
   return (
     <div className={styles.container}>
       <LanguageMenu />

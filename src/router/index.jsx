@@ -10,8 +10,6 @@ import { useSSR } from 'react-i18next';
 const AppRouter = () => {
   const { hasBabyInfo, babyInfo, isLoading } = useContext(appContext);
 
-  console.log(hasBabyInfo);
-
   return (
     <Router>
       <Backdrop
