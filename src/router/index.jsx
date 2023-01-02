@@ -1,21 +1,29 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
+import { appContext } from '../context';
+import Welcome from '../views/welcome';
 import Home from '../views/home';
+import { useSSR } from 'react-i18next';
 
 const AppRouter = () => {
+  const { hasBabyInfo, babyInfo, isLoading } = useContext(appContext);
+
+  console.log(hasBabyInfo);
+
   return (
     <Router>
+      <Backdrop
+        sx={{ color: '#99e9f2', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={isLoading}
+      >
+        <CircularProgress color='inherit' />
+      </Backdrop>
       <div>
-        {/* A <Switch> looks through its children <Route>s and
-              renders the first one that matches the current URL. */}
         <Switch>
-          <Route path='/about'>
-            <p>about</p>
-          </Route>
-          <Route path='/users'>
-            <p>users</p>
-          </Route>
           <Route path='/'>
-            <Home />
+            {hasBabyInfo || babyInfo?.name ? <Home /> : <Welcome />}
           </Route>
         </Switch>
       </div>

@@ -1,3 +1,26 @@
 {
-  "Welcome_Text": "Welcome to Baby Routine."
+  "Welcome_Title": "Welcome to Baby Routine",
+  "Welcome_Text": "You will be able to follow many data of your baby, especially sleep tracking.",
+  "Welcome_Text_Start": "You can enter your baby's basic information to get started.",
+  "Baby_Info_Name": "Name",
+  "Baby_Info_Gender": "Gender",
+  "Baby_Info_Gender_Girl": "Girl",
+  "Baby_Info_Gender_Boy": "Boy",
+  "Baby_Info_Birth_Year": "Birthyear",
+  "Baby_Info_Birth_Month": "Month",
+  "Baby_Info_Birth_Day": "Day",
+  "Welcome_Info_Warning": "Your information will only be saved on this device unless you delete the history/cookies!",
+  "Save_And_Continue": "Save and Continue",
+  "january": "January",
+  "february": "February",
+  "march": "March",
+  "april": "April",
+  "may": "May",
+  "june": "June",
+  "july": "July",
+  "august": "August",
+  "september": "September",
+  "october": "October",
+  "november": "November",
+  "december": "December"
 }

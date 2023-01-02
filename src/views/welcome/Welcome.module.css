@@ -1,0 +1,50 @@
+.container {
+  max-width: 100%;
+  padding: 16px;
+}
+
+.welcomeWrapper {
+  width: calc(100% - 32px);
+  max-width: 600px;
+  border: 1px solid #1098ad;
+  border-radius: 8px;
+  margin: 16px auto;
+  padding: 16px;
+  height: fit-content;
+  min-height: 400px;
+  text-align: center;
+}
+
+.iconWrapper {
+  width: 48px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.text {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #1098ad;
+  margin-top: 16px;
+  padding: 24px 0 16px 0;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 8px 0;
+}
