@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
     localStorage.getItem('babyInfo') ? true : false
   );
   const [babyInfo, setBabyInfo] = useState(
-    localStorage.getItem('babyInfo') || null
+    JSON.parse(localStorage.getItem('babyInfo')) || null
   );
   const [language, setLanguage] = useState(
     localStorage.getItem('language') || 'tr'

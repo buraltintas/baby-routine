@@ -7,10 +7,10 @@ import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import EggIcon from '../../components/EggIcon';
-import styles from './Welcome.module.css';
+import EggIcon from '../../common/EggIcon';
+import styles from './welcome.module.css';
 import { months } from '../../utils/months';
-import LanguageMenu from '../../components/language-menu';
+import LanguageMenu from '../../common/language-menu';
 import { appContext } from '../../context';
 
 const Welcome = () => {

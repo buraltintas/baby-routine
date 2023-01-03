@@ -5,7 +5,6 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { appContext } from '../context';
 import Welcome from '../views/welcome';
 import Home from '../views/home';
-import { useSSR } from 'react-i18next';
 
 const AppRouter = () => {
   const { hasBabyInfo, babyInfo, isLoading } = useContext(appContext);

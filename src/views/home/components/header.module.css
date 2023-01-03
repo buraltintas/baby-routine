@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid #1098ad;
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+}
+
+.nameContainer span {
+  font-size: 24px;
+  font-weight: 700;
+  border-left: 1px solid #1098ad;
+  padding-left: 8px;
+}
+
+.headerIcon {
+  width: 24px;
+  height: 24px;
+}
