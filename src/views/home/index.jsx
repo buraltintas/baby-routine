@@ -1,9 +1,12 @@
+import Footer from './components/footer';
 import Header from './components/header';
+import styles from './home.module.css';
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.homeContainer}>
       <Header />
+      <Footer />
     </div>
   );
 };
