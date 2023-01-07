@@ -1,5 +1,5 @@
-import EggIcon from '../../../common/EggIcon';
-import GithubIcon from '../../../common/GithubIcon';
+import EggIcon from '../../../common/egg-icon';
+import GithubIcon from '../../../common/github-icon';
 import styles from './footer.module.css';
 import Button from '@mui/material/Button';
 import { useTranslation } from 'react-i18next';

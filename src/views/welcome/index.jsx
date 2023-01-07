@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import EggIcon from '../../common/EggIcon';
+import EggIcon from '../../common/egg-icon';
 import styles from './welcome.module.css';
 import { months } from '../../utils/months';
 import LanguageMenu from '../../common/language-menu';
@@ -50,8 +50,8 @@ const Welcome = () => {
         <p className={styles.text}>{t('Welcome_Text')}</p>
         <p className={styles.text}>{t('Welcome_Text_Start')}</p>
         <div className={styles.form}>
-          <div>
-            <FormControl sx={{ m: 1, minWidth: 120 }}>
+          <div className={styles.flex}>
+            <FormControl sx={{ m: 1, width: 185 }}>
               <TextField
                 required
                 label={t('Baby_Info_Name')}
@@ -73,8 +73,8 @@ const Welcome = () => {
             </FormControl>
           </div>
 
-          <div>
-            <FormControl required sx={{ m: 1, minWidth: 120 }}>
+          <div className={styles.flex}>
+            <FormControl required sx={{ m: 1, minWidth: 80, width: 110 }}>
               <TextField
                 required
                 label={t('Baby_Info_Birth_Year')}
@@ -83,7 +83,7 @@ const Welcome = () => {
                 onChange={(e) => changeBabyInfo('birthyear', e.target.value)}
               />
             </FormControl>
-            <FormControl required sx={{ m: 1, minWidth: 100 }}>
+            <FormControl required sx={{ m: 1, minWidth: 80 }}>
               <InputLabel>{t('Baby_Info_Birth_Month')}</InputLabel>
               <Select
                 required

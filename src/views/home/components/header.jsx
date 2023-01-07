@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import EggIcon from '../../../common/EggIcon';
+import EggIcon from '../../../common/egg-icon';
 import LanguageMenu from '../../../common/language-menu';
 import { appContext } from '../../../context';
 import styles from './header.module.css';
@@ -13,7 +13,7 @@ const Header = () => {
         <div className={styles.headerIcon}>
           <EggIcon />
         </div>
-        <span>{babyInfo.name}</span>
+        <span>{babyInfo.name.toUpperCase()}</span>
       </div>
       <div className={styles.languageMenuContainer}>
         <LanguageMenu />
