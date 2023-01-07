@@ -42,6 +42,12 @@ const AppProvider = ({ children }) => {
     }
   }, [babyInfo]);
 
+  const deleteData = () => {
+    setBabyInfo(null);
+    setHasBabyInfo(false);
+    localStorage.clear('babyInfo');
+  };
+
   return (
     <appContext.Provider
       value={{
@@ -53,6 +59,7 @@ const AppProvider = ({ children }) => {
         setHasBabyInfo,
         babyInfo,
         setBabyInfo,
+        deleteData,
       }}
     >
       {children}
